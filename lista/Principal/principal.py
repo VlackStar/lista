@@ -1,12 +1,10 @@
 '''
-Created on 30 nov. 2016
+Created on 1 dic. 2016
 
 @author: MariaJesus
 '''
-"En esta función vamos a crear la lista a través de un bucle"
-def crearlista (lista):
-    ele=input("Introduce elementos a la lista: ")
-    lista.append(ele)
+"Este es el menu principal de la funcion"
+from Crear_Lista.crear_lista import crearlista
 if __name__ =="__main__":
     l=lista=[]
     crearlista(l)
