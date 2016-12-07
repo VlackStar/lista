@@ -10,3 +10,8 @@ def crearlista (lista):
         lista.append(ele)
     except:
         print("Error")
+def sublistas (lista): #Esto no me funciona :(
+    id_paciente=lista[0]
+    fase=lista[1]
+    temperaturas=float(lista[2:])
+    return id_paciente, fase, temperaturas    

@@ -4,7 +4,8 @@ Created on 1 dic. 2016
 @author: MariaJesus
 '''
 "Este es el menu principal de la funcion"
-from Crear_Lista.crear_lista import crearlista
+from listas.listas import crearlista
+from listas.listas import sublistas
 if __name__ =="__main__":
     l=lista=[]
     crearlista(l)
@@ -16,3 +17,9 @@ while True:
         else:
             print("Ya tenemos lista :D!!")
             break
+temperaturas=lista[2:]
+id_paciente=lista[0]
+fase=lista[1]
+print(float (id_paciente))
+print("Fase: %s" %fase)
+print("Temperaturas: %s" %temperaturas)
