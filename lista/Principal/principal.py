@@ -6,20 +6,18 @@ Created on 1 dic. 2016
 "Este es el menu principal de la funcion"
 from listas.listas import crearlista
 from listas.listas import sublistas
+from listas.listas import texto
+from listas.listas import flotante
 if __name__ =="__main__":
-    l=lista=[]
+    l=[]
     crearlista(l)
 while True:
         respuesta=input("¿Desea introducir más datos? ")
         if respuesta=="Sí" or respuesta=="Si" or respuesta=="sí" or respuesta=="si":
             crearlista(l)
-            print(lista)
+            print(l)
         else:
             print("Ya tenemos lista :D!!")
             break
-temperaturas=lista[2:]
-id_paciente=lista[0]
-fase=lista[1]
-print(float (id_paciente))
-print("Fase: %s" %fase)
-print("Temperaturas: %s" %temperaturas)
+print(flotante (l))
+print(texto (l))
