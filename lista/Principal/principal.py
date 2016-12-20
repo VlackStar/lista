@@ -21,3 +21,9 @@ while True:
             break
 print(flotante (l))
 print(texto (l))
+id_paciente, fases, temperaturas=sublistas(l)
+for indice1 in range(len(temperaturas)):
+    for indice2 in range (indice1+1, len(temperaturas)):
+        if temperaturas[indice1]>temperaturas[indice2]:
+            temperaturas[indice1],temperaturas[indice2]=temperaturas[indice2],temperaturas[indice1]
+print(temperaturas) 

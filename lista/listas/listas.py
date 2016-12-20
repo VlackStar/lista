@@ -13,7 +13,7 @@ def crearlista (lista):
 def sublistas (lista):
     id_paciente=lista[0]
     fase=lista[1]
-    temperaturas=float(lista[2:])
+    temperaturas=lista[2:]
     return id_paciente, fase, temperaturas
 def flotante (lista):
     temperaturas=lista[2:]
@@ -25,5 +25,3 @@ def texto (lista):
     for numero1 in range (len(cadena_texto)):
         cadena_texto[numero1]=str(cadena_texto[numero1])
     return cadena_texto
-    
-    
